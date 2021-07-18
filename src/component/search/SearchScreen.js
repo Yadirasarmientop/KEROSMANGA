@@ -1,8 +1,8 @@
 import React from 'react';
-import { useForm } from '../Hooks/useForm';
-import './header.css';
+import { useForm } from '../../Hooks/useForm';
+import '../ui/header.css';
 
-export const BuscadorHeader = () => {
+export const SearchScreen = () => {
 
     const [{search}, handleInputChange]= useForm ({search: ''});
     return (

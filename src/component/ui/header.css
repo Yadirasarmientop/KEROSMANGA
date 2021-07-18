@@ -1,32 +1,43 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Alegreya&display=swap');
 
-header{
+.navbar-dark{
     width:100%;
-    height: 60px;
     background: #343A40;
-    display: flex;
-    position: fixed;
     font-family: 'Roboto', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
-}
+} 
 
 
 /* Logotipo */
 
-#logotipo{
-    margin: 10px;  
-    padding-top: 5px;
+ .logotipo{
+    display: flex; 
+    padding-top: auto;
+    padding-bottom: auto;
     font-family: 'Alegreya', 'Times New Roman', Times, serif;
-}
-
-header img {
+    font-size: 12px;
     width: 60px;
     height: 60px;
     margin: 0 10px 0 30px;
 }
 
+.logotipo h4 {
+    margin-top: auto;
+    margin-bottom: auto;
+    
+}
+
+#Barranav {
+    align-items: center;
+}
+/*header img {
+width: 60px;
+height: 60px;
+margin: 0 10px 0 30px;
+} */
+
 /* Menu */
-#btn-menu {
+/* #btn-menu {
     display:none;
 
 }
@@ -85,20 +96,20 @@ header label:hover{
     #btn-menu:checked ~ .menu{
         margin: 0;
     }
-}
+} */
 
 
 /* Botón */
-.btn {
+/* .btn {
     height: 20px;
 }
 
 .btn-login {
     width: 80px;
-}
+} */
 
 /* Buscador */
-.search{
+/* .search{
     display: flex;
     padding: 15px;  
 }
@@ -126,5 +137,5 @@ header label:hover{
     cursor: pointer;
 }
 
-
+ */
 
