@@ -14,7 +14,7 @@ export const ImageScroll = () => {
         <div>
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner ">
-                    <div class="carousel-item active">
+                    <div class="carousel-item active" id="item">
                         <div className= "slick">
                             <Link exact to="/inicio">
                                 <img src='/img/animes/image-1.jpg' class="d-block image" alt='Titulo'>
@@ -45,7 +45,7 @@ export const ImageScroll = () => {
                         </div>
                     </div>
                     
-                    <div class="carousel-item">
+                    <div class="carousel-item" id="item">
                         <div className= "slick">
                             <Link exact to="/inicio">
                                 <img src='/img/animes/image-2.jpg' class="d-block image" alt='Titulo'>
