@@ -1,15 +1,16 @@
 import React from 'react';
 import { ImageScroll } from './ImageScroll';
-import './inicio.css';
+import './MangaCard.css';
 
 export const InicioScreen = () => {
     return (
-        <div className="container-titulo">
+        <div className="Carousel">
             <h4 className="titulo">
                 DIRECTORIO MANGA
             </h4>
             <hr />
             <ImageScroll />
+            <hr />
         </div>
     )
 }
