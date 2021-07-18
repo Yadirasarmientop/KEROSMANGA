@@ -12,16 +12,17 @@
     width: 179px;
     height: 282px ;
     border-radius: 20px;
-    margin-left: 30px;
+    margin-left: auto;
+    margin-right: auto;
     
 }
 
 .carousel-item {       
-    transition: transform 2s ease, opacity .5s ease-out;
+    transition: transform 3s ease, opacity .5s ease-out;
 }
 
 #item {
-    padding-left: 10%;
+    padding-left: 12%;
 }
 
 hr {
@@ -48,6 +49,13 @@ hr {
     opacity: .55;
 }
 
+h4, small, a{
+    text-align: center;
+    color: aliceblue;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
 /* .carousel-img {
     width: 100%;
     height: 400px;
@@ -58,17 +66,12 @@ hr {
 
 
 
+/* 
 
-h4, small, a{
-    text-align: center;
-    color: aliceblue;
-    text-decoration: none;
-    margin-top: 10px;
-}
 
 /* images */
 
-
+/* 
 .slick-list {
     position: relative;
     display: flex;
@@ -92,11 +95,11 @@ h4, small, a{
     display: flex;
     align-items: center;
     /* background: radial-gradient(circle, rgba(255,255,255,1)0%, rgba(226,226,226,1)110%); */
-    position: relative;
+    /* position: relative;
     justify-content: center;
     transition: .5s ease-in-out;
-}
-
+} */
+/* 
 .slick h4 {
    z-index: 1; 
    font-size: 20px;
@@ -114,7 +117,7 @@ h4, small, a{
     opacity: .55;
 }
 
-/* button */
+button  
 .slick-arrow {
     border-radius:30px ;
     background-color: rgb(225, 243, 243);
@@ -139,4 +142,4 @@ h4, small, a{
     margin: 0;
     padding: 0;
 }
-
+ */
