@@ -1,5 +1,5 @@
-import React from 'react';
-import { useState } from 'react';
+import React,{ useState } from 'react';
+
 import '../../inicio/MangaCard.css';
 import './searchStyle.css';
 
@@ -8,7 +8,7 @@ export const SearchBox = ({onSearch, onClose}) => {
     const [searchText, setSearchText] = useState("");
 
     const handleSearchClick = () => {
-        searchText('');
+        setSearchText ('');
         onClose();
     }
 
@@ -17,7 +17,7 @@ export const SearchBox = ({onSearch, onClose}) => {
         <div className="search-box">
             <h2 className="titulo search-box-titulo">BUSCADOR DE MANGAS</h2>
             <hr />
-            <div search-box-buttons>
+            <div className = "search-box-buttons">
 
                 <label>
                     <input
@@ -31,8 +31,8 @@ export const SearchBox = ({onSearch, onClose}) => {
                 </label>
 
                 <button 
-                className="search-btn"
-                onClick={onSearch}
+                    className="search-btn"
+                    onClick={() => onSearch(searchText)}
                 >
                     Buscar
                 </button>
