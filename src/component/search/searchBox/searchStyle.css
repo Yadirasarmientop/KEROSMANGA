@@ -1,23 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Alegreya&display=swap');
+
 .search {
-    height: 100hv;
+    padding: 0;
     display: flex;
+    width: 100%;
+    font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.search--center{
+    margin-top:250px;
     justify-content: center;
     align-items: center;
-    width: 100%;
+}
+.search--top{
+    justify-content: center;
+    align-items: flex-start;
 }
 .search-box {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
+ 
 }
 
 .search-box-buttons{
     display: flex;
     flex-direction: row; 
 }
+.search-box-titulo{
+    margin-bottom: -5px;
+}
 
 /* .search-box-input{
+
     border-radius: 5px;
     border: none;
     padding-left: 20px;

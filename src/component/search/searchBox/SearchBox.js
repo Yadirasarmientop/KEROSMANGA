@@ -3,9 +3,14 @@ import { useState } from 'react';
 import '../../inicio/MangaCard.css';
 import './searchStyle.css';
 
-export const SearchBox = () => {
+export const SearchBox = ({onSearch, onClose}) => {
 
     const [searchText, setSearchText] = useState("");
+
+    const handleSearchClick = () => {
+        searchText('');
+        onClose();
+    }
 
     return (
         
@@ -13,6 +18,7 @@ export const SearchBox = () => {
             <h2 className="titulo search-box-titulo">BUSCADOR DE MANGAS</h2>
             <hr />
             <div search-box-buttons>
+
                 <label>
                     <input
                         type = "text"
@@ -23,12 +29,21 @@ export const SearchBox = () => {
                         onChange = {({target: {value}})=>setSearchText(value)}
                     ></input>
                 </label>
-                <button className="search-btn">
-                <i className="fas fa-search"></i> Buscar
+
+                <button 
+                className="search-btn"
+                onClick={onSearch}
+                >
+                    Buscar
                 </button>
-                <button className="search-btn">
-                <i className="fas fa-search"></i> Cerrar
+
+                <button 
+                    className="search-btn"
+                    onClick={handleSearchClick}
+                >
+                    Cerrar
                 </button>
+
             </div>
             
         </div>
