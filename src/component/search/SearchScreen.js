@@ -8,7 +8,7 @@ export const SearchScreen = () => {
     const [isAtTop, setisAtTop]= useState(false);
 
     const handleOpenSearch =() => {
-        setisAtTop(!isAtTop);
+        setisAtTop(false);
         setResults([])
     };
 
