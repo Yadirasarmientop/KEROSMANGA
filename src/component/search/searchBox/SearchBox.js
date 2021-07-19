@@ -8,10 +8,11 @@ export const SearchBox = () => {
     const [searchText, setSearchText] = useState("");
 
     return (
-        <div>
-            <div className="search-box">
-                <h2 className="titulo">BUSCADOR DE MANGAS</h2>
-                <hr />
+        
+        <div className="search-box">
+            <h2 className="titulo search-box-titulo">BUSCADOR DE MANGAS</h2>
+            <hr />
+            <div search-box-buttons>
                 <label>
                     <input
                         type = "text"
@@ -22,11 +23,15 @@ export const SearchBox = () => {
                         onChange = {({target: {value}})=>setSearchText(value)}
                     ></input>
                 </label>
-                <button>
-                <i className="fas fa-search"></i> 
+                <button className="search-btn">
+                <i className="fas fa-search"></i> Buscar
                 </button>
-               
+                <button className="search-btn">
+                <i className="fas fa-search"></i> Cerrar
+                </button>
             </div>
+            
         </div>
+        
     )
 }
