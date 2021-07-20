@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { SearchBox } from './searchBox/SearchBox';
 import {mangas} from '../../data/MOCK_DATA';
 import './searchBox/searchStyle.css';
+import { SearchResults } from './searchResults/SearchResults';
 
 export const SearchScreen = () => {
 
@@ -39,6 +40,7 @@ export const SearchScreen = () => {
                 onSearch={handleSearchClick}
                 onClose={handleOpenSearch} 
             />
+            <SearchResults results={results}/>
         </div>
     )
 }

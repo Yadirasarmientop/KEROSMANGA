@@ -22,7 +22,7 @@ export const SearchBox = ({onSearch, onClose}) => {
                 <label>
                     <input
                         type = "text"
-                        className = "search-box-input"
+                        className = "search-box-input form-control"
                         placeholder = "Buscar..."
                         autoComplete = "off"
                         value = {searchText}
@@ -31,14 +31,14 @@ export const SearchBox = ({onSearch, onClose}) => {
                 </label>
 
                 <button 
-                    className="search-btn"
+                    className="search-btn btn-light"
                     onClick={() => onSearch(searchText)}
                 >
                     Buscar
                 </button>
 
                 <button 
-                    className="search-btn"
+                    className="search-btn btn-light"
                     onClick={handleSearchClick}
                 >
                     Cerrar

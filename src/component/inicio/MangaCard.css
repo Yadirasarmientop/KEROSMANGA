@@ -23,6 +23,7 @@
 
 #item {
     padding-left: 12%;
+    white-space: nowrap;
 }
 
 hr {
@@ -38,6 +39,7 @@ hr {
     width: 100%;
     padding-top: 20px;
     opacity: .9;
+    color: rgb(246, 252, 252);
 }
 
 .slick{
